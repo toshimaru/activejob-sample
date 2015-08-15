@@ -26,6 +26,6 @@ module ActivejobSample
     # Be sure to have the adapter's gem in your Gemfile
     # and follow the adapter's specific installation
     # and deployment instructions.
-    config.active_job.queue_adapter = :sidekiq
+    config.active_job.queue_adapter = :shoryuken
   end
 end
