@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'sidekiq'
+gem 'shoryuken'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
