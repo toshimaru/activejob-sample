@@ -1,14 +1,9 @@
 class NewJob < ActiveJob::Base
-  queue_as :default
+  queue_as :shoryuken_test
 
-  rescue_from ActiveJob::DeserializationError do |ex|
-    Shoryuken.logger.error ex
-    Shoryuken.logger.error ex.backtrace.join("\n")
-  end
-
-  def perform(*args)
+  def perform(name)
     10.times do
-      logger.info args
+      logger.info "Hello #{name}"
       sleep 1
     end
   end
